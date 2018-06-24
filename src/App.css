@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  display: inline-block;
+  background: #20232a;
+  color: #fff;
+  text-decoration: none;
+  padding: 2px 8px;
+  text-transform: uppercase;
+  font-weight: 900;
+  border-radius: 4px;
+}
+
+h1 {
+  color: rgb(40, 44, 52);
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+img {
+  background-color: #20232a;
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+}
+
+header {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.container {
+  width: 570px;
+  background: #fff;
+  margin: 0 auto;
+  border-radius: 4px;
+  padding: 30px;
+  box-shadow: 0 0 18px -5px rgba(0,0,0,.25);
+}
+
+form {
+  position: relative;
+}
+
+input {
+  padding: 15px;
+  border: 2px solid transparent;
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: 0 0 18px -5px rgba(0,0,0,.25);
+  font-size: 22px;
+  transition: all .2s;
+}
+
+input.error {
+  border-color: #F44336;
+}
+
+form button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #20232a;
+  border: none;
+  color: #fff;
+  height: 100%;
+  font-weight: 900;
+  padding: 8px 30px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.item-lists {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 25px;
+  border: 1px solid #eee;
+}
+
+.item-lists li {
+  position: relative;
+  padding: 20px;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+}
+
+li.not-found {
+    text-align: center;
+    font-weight: 900;
+    text-transform: uppercase;
+    background: #EF5350;
+    color: #fff;
+}
+
+.item-lists li:last-child {
+  border-bottom: none;
+}
+
+.item-lists li span {
+  width: 420px;
+  height: 20px;
+  font-size: 18px;
+  text-align: left;
+  font-weight: 300;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.item-lists li span.done {
+  color: #b0bec5;
+  text-decoration: line-through;
+}
+
+.item-lists li button {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  background: #f44336;
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: 900;
+  opacity: 0;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.item-lists li:hover button {
+  opacity: 1;
+}
+
+.footer-area {
+    padding: 50px 0;
+    text-align: center;
+}
